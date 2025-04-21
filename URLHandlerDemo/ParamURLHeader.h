@@ -8,9 +8,9 @@
 #ifndef ParamURLHeader_h
 #define ParamURLHeader_h
 
-#define ParamPageURL "/{courseId}/paramPage"
+#define ParamPageURL @"/{courseId}/paramPage"
 #define MakeParamPageURL(_courseId, _param1, _param2) \
-    URL_CREATE(@ParamPageURL, (@{ \
+    URL_CREATE(ParamPageURL, (@{ \
         @"courseId" : _courseId ?: @"", \
         @"param1" : _param1 ?: @"", \
         @"param2" : _param2 ?: @"", \

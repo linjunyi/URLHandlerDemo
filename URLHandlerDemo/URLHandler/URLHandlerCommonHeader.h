@@ -25,7 +25,6 @@ static char* EXCLUDE_IMAGE_FOR_URL_HANDLE[] = {
 #define URL_EXPORT_SEGMENT "__DATA"
 #define URL_EXPORT_SECTION "__urlhandle"
 
-#define C_URL_CREATE(_url_cstring, _parameters) URL_CREATE(@_url_cstring, _parameters)
 #define URL_CREATE(_url, _parameters) [FBURLHandler url:_url withParameters:_parameters ?: @{}]
 
 #define URL_EXPORT(...) \
