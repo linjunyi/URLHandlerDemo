@@ -9,12 +9,15 @@
 #import <dlfcn.h>
 #import <mach-o/dyld.h>
 #import <mach-o/getsect.h>
+#import "URLHandlerCommonHeader.h"
 
 #ifdef __LP64__
+typedef struct mach_header_64 FBMachHeader;
 typedef uint64_t FBMachOExportValue;
 typedef struct section_64 FBMachOExportSection;
 #define FBGetSectByNameFromHeader getsectbynamefromheader_64
 #else
+typedef struct mach_header FBMachHeader;
 typedef uint32_t FBMachOExportValue;
 typedef struct section FBMachOExportSection;
 #define FBGetSectByNameFromHeader getsectbynamefromheader
@@ -107,7 +110,7 @@ static NSMutableDictionary<NSNumber*, _InnerURLHandler*> *_RegisterHandlers = ni
             }
         }
         
-        const struct mach_header *header = _dyld_get_image_header(i);
+        const FBMachHeader *header = (FBMachHeader *)_dyld_get_image_header(i);
         
         Dl_info info;
         dladdr(header, &info);
@@ -123,7 +126,14 @@ static NSMutableDictionary<NSNumber*, _InnerURLHandler*> *_RegisterHandlers = ni
             @try {
                 struct URL_HANDLE entry = *(struct URL_HANDLE *)(dliFbase + addr);
                 _InnerURLHandler *handle = [_InnerURLHandler new];
-                handle.url =  [NSString stringWithUTF8String:entry.url];
+                NSString *url =  [NSString stringWithUTF8String:entry.url];
+                if (url.length > 3) {
+                    if ([[url substringToIndex:2] isEqualToString:@"@\""] &&
+                        [[url substringFromIndex:url.length-1] isEqualToString:@"\""]) {
+                        url = [url substringWithRange:NSMakeRange(2, url.length-3)];
+                    }
+                }
+                handle.url = url;
                 handle.handle = entry.handle;
                 if (handle.url.length && handle.handle != NULL) {
                     [_RegisterURLs addObject:handle.url];
