@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7024AB42DB25F6900559AC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7024AB32DB25F6900559AC0 /* AppDelegate.m */; };
+		A7024ABA2DB25F6900559AC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7024AB92DB25F6900559AC0 /* ViewController.m */; };
+		A7024ABF2DB25F6B00559AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7024ABE2DB25F6B00559AC0 /* Assets.xcassets */; };
+		A7024AC22DB25F6B00559AC0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A7024AC12DB25F6B00559AC0 /* Base */; };
+		A7024AC52DB25F6B00559AC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7024AC42DB25F6B00559AC0 /* main.m */; };
+		A7024AD72DB29E6400559AC0 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7024AD62DB29E6400559AC0 /* SettingViewController.m */; };
+		A7024ADA2DB621B500559AC0 /* AutoRegURLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7024AD92DB621B500559AC0 /* AutoRegURLHandler.m */; };
+		A7024ADD2DB621E000559AC0 /* FBURLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7024ADC2DB621E000559AC0 /* FBURLHandler.m */; };
+		A7024AE12DB6225C00559AC0 /* FBURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A7024ADF2DB6225C00559AC0 /* FBURLHelper.m */; };
+		A7024AE52DB6229A00559AC0 /* FBURLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = A7024AE32DB6229A00559AC0 /* FBURLRouter.m */; };
+		A7024AE92DB6313E00559AC0 /* ParamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7024AE82DB6313E00559AC0 /* ParamViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A7024AAF2DB25F6900559AC0 /* URLHandlerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLHandlerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7024AB22DB25F6900559AC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A7024AB32DB25F6900559AC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A7024AB82DB25F6900559AC0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A7024AB92DB25F6900559AC0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A7024ABE2DB25F6B00559AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7024AC12DB25F6B00559AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7024AC32DB25F6B00559AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7024AC42DB25F6B00559AC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7024ACC2DB25FC400559AC0 /* URLHandlerCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLHandlerCommonHeader.h; sourceTree = "<group>"; };
+		A7024ACD2DB264F000559AC0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A7024AD52DB29E6400559AC0 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		A7024AD62DB29E6400559AC0 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		A7024AD82DB621B500559AC0 /* AutoRegURLHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoRegURLHandler.h; sourceTree = "<group>"; };
+		A7024AD92DB621B500559AC0 /* AutoRegURLHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoRegURLHandler.m; sourceTree = "<group>"; };
+		A7024ADB2DB621E000559AC0 /* FBURLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBURLHandler.h; sourceTree = "<group>"; };
+		A7024ADC2DB621E000559AC0 /* FBURLHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBURLHandler.m; sourceTree = "<group>"; };
+		A7024ADE2DB6223100559AC0 /* FBURLHandlerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBURLHandlerProtocol.h; sourceTree = "<group>"; };
+		A7024ADF2DB6225C00559AC0 /* FBURLHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBURLHelper.m; sourceTree = "<group>"; };
+		A7024AE02DB6225C00559AC0 /* FBURLHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBURLHelper.h; sourceTree = "<group>"; };
+		A7024AE32DB6229A00559AC0 /* FBURLRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBURLRouter.m; sourceTree = "<group>"; };
+		A7024AE42DB6229A00559AC0 /* FBURLRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBURLRouter.h; sourceTree = "<group>"; };
+		A7024AE72DB6313E00559AC0 /* ParamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParamViewController.h; sourceTree = "<group>"; };
+		A7024AE82DB6313E00559AC0 /* ParamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParamViewController.m; sourceTree = "<group>"; };
+		A7024AEA2DB6331A00559AC0 /* ParamURLHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParamURLHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7024AAC2DB25F6900559AC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7024AA62DB25F6900559AC0 = {
+			isa = PBXGroup;
+			children = (
+				A7024AB12DB25F6900559AC0 /* URLHandlerDemo */,
+				A7024AB02DB25F6900559AC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7024AB02DB25F6900559AC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7024AAF2DB25F6900559AC0 /* URLHandlerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7024AB12DB25F6900559AC0 /* URLHandlerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A7024ACB2DB25F8600559AC0 /* URLHandler */,
+				A7024AB22DB25F6900559AC0 /* AppDelegate.h */,
+				A7024AB32DB25F6900559AC0 /* AppDelegate.m */,
+				A7024AB82DB25F6900559AC0 /* ViewController.h */,
+				A7024AB92DB25F6900559AC0 /* ViewController.m */,
+				A7024AD52DB29E6400559AC0 /* SettingViewController.h */,
+				A7024AD62DB29E6400559AC0 /* SettingViewController.m */,
+				A7024AE72DB6313E00559AC0 /* ParamViewController.h */,
+				A7024AE82DB6313E00559AC0 /* ParamViewController.m */,
+				A7024AEA2DB6331A00559AC0 /* ParamURLHeader.h */,
+				A7024ACD2DB264F000559AC0 /* PrefixHeader.pch */,
+				A7024ABE2DB25F6B00559AC0 /* Assets.xcassets */,
+				A7024AC02DB25F6B00559AC0 /* LaunchScreen.storyboard */,
+				A7024AC32DB25F6B00559AC0 /* Info.plist */,
+				A7024AC42DB25F6B00559AC0 /* main.m */,
+			);
+			path = URLHandlerDemo;
+			sourceTree = "<group>";
+		};
+		A7024ACB2DB25F8600559AC0 /* URLHandler */ = {
+			isa = PBXGroup;
+			children = (
+				A7024AE22DB6227200559AC0 /* FB */,
+				A7024ACC2DB25FC400559AC0 /* URLHandlerCommonHeader.h */,
+				A7024AD82DB621B500559AC0 /* AutoRegURLHandler.h */,
+				A7024AD92DB621B500559AC0 /* AutoRegURLHandler.m */,
+			);
+			path = URLHandler;
+			sourceTree = "<group>";
+		};
+		A7024AE22DB6227200559AC0 /* FB */ = {
+			isa = PBXGroup;
+			children = (
+				A7024AE42DB6229A00559AC0 /* FBURLRouter.h */,
+				A7024AE32DB6229A00559AC0 /* FBURLRouter.m */,
+				A7024AE02DB6225C00559AC0 /* FBURLHelper.h */,
+				A7024ADF2DB6225C00559AC0 /* FBURLHelper.m */,
+				A7024ADE2DB6223100559AC0 /* FBURLHandlerProtocol.h */,
+				A7024ADB2DB621E000559AC0 /* FBURLHandler.h */,
+				A7024ADC2DB621E000559AC0 /* FBURLHandler.m */,
+			);
+			path = FB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7024AAE2DB25F6900559AC0 /* URLHandlerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7024AC82DB25F6B00559AC0 /* Build configuration list for PBXNativeTarget "URLHandlerDemo" */;
+			buildPhases = (
+				A7024AAB2DB25F6900559AC0 /* Sources */,
+				A7024AAC2DB25F6900559AC0 /* Frameworks */,
+				A7024AAD2DB25F6900559AC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = URLHandlerDemo;
+			productName = URLHandleDemo;
+			productReference = A7024AAF2DB25F6900559AC0 /* URLHandlerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7024AA72DB25F6900559AC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					A7024AAE2DB25F6900559AC0 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = A7024AAA2DB25F6900559AC0 /* Build configuration list for PBXProject "URLHandlerDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7024AA62DB25F6900559AC0;
+			productRefGroup = A7024AB02DB25F6900559AC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7024AAE2DB25F6900559AC0 /* URLHandlerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7024AAD2DB25F6900559AC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7024ABF2DB25F6B00559AC0 /* Assets.xcassets in Resources */,
+				A7024AC22DB25F6B00559AC0 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7024AAB2DB25F6900559AC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7024ABA2DB25F6900559AC0 /* ViewController.m in Sources */,
+				A7024ADD2DB621E000559AC0 /* FBURLHandler.m in Sources */,
+				A7024AB42DB25F6900559AC0 /* AppDelegate.m in Sources */,
+				A7024AE52DB6229A00559AC0 /* FBURLRouter.m in Sources */,
+				A7024AC52DB25F6B00559AC0 /* main.m in Sources */,
+				A7024AE12DB6225C00559AC0 /* FBURLHelper.m in Sources */,
+				A7024ADA2DB621B500559AC0 /* AutoRegURLHandler.m in Sources */,
+				A7024AE92DB6313E00559AC0 /* ParamViewController.m in Sources */,
+				A7024AD72DB29E6400559AC0 /* SettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7024AC02DB25F6B00559AC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7024AC12DB25F6B00559AC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7024AC62DB25F6B00559AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A7024AC72DB25F6B00559AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7024AC92DB25F6B00559AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6S7VM347S;
+				GCC_PREFIX_HEADER = URLHandlerDemo/PrefixHeader.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = URLHandlerDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fenbi.ape.searchapp.URLHandlerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7024ACA2DB25F6B00559AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6S7VM347S;
+				GCC_PREFIX_HEADER = URLHandlerDemo/PrefixHeader.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = URLHandlerDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fenbi.ape.searchapp.URLHandlerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7024AAA2DB25F6900559AC0 /* Build configuration list for PBXProject "URLHandlerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7024AC62DB25F6B00559AC0 /* Debug */,
+				A7024AC72DB25F6B00559AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7024AC82DB25F6B00559AC0 /* Build configuration list for PBXNativeTarget "URLHandlerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7024AC92DB25F6B00559AC0 /* Debug */,
+				A7024ACA2DB25F6B00559AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7024AA72DB25F6900559AC0 /* Project object */;
+}
